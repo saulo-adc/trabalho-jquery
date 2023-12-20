@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#phel {
+			display: none
+		}
+
+		@keyframes color-change {
+			0% {
+				color: red;
+			}
+
+			50% {
+				color: blue;
+			}
+
+			100% {
+				color: red;
+			}
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+	<script>
+		$(document).ready(function () {
+			$("#text").hover(function () {
+				$("#phel").fadeIn();
+				$("#example1").css({
+					backgroundImage: 'url(https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FAphelios_9.jpg&w=1200&q=75)',
+					backgroundSize:'150px'
+				});
+				$("#ext").css({
+					fontFamily: 'monospace',
+					fontSize: '3em',
+					animation: 'color-change 1s infinite'
+
+				})
+			},
+				function () {
+					$("#phel").fadeOut();
+				}
+			)
+		})
+	</script>
+</head>
+
+<body>
+	<center>
+		<div id="example1">
+			<p id="text">aphelios gaming</p>
+			<img id="phel"
+				src="https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.24.1/CHAMPION_SKIN/523018/ICON">
+		</div>
+	</center>
+</body>
+
+</html>
