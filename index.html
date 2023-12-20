@@ -33,7 +33,7 @@
 					backgroundImage: 'url(https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FAphelios_9.jpg&w=1200&q=75)',
 					backgroundSize:'150px'
 				});
-				$("#ext").css({
+				$("#text").css({
 					fontFamily: 'monospace',
 					fontSize: '3em',
 					animation: 'color-change 1s infinite'
@@ -42,6 +42,11 @@
 			},
 				function () {
 					$("#phel").fadeOut();
+					$("#text").css({
+						fontFamily: 'Times New Roman',
+						animation: 'none',
+						fontSize: '16px'
+					})
 				}
 			)
 		})
